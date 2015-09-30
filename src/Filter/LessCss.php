@@ -23,6 +23,8 @@ use MiniAsset\Filter\CssDependencyTrait;
  *
  * @see http://lesscss.org/
  */
+defined('TMP') or define('TMP', sys_get_temp_dir() . DIRECTORY_SEPARATOR);
+
 class LessCss extends AssetFilter
 {
     use CssDependencyTrait;
